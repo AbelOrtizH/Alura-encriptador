@@ -14,7 +14,7 @@
         </header>
          <main>
             <div class="encrypted-textarea">
-                <textarea name="encrypted-sms" id="encrypted-sms"  placeholder="Ingrese el texto aqui"></textarea>
+                <textarea name="encrypted-sms" id="encrypted-sms"  placeholder="Ingrese el texto aqui" autofocus></textarea>
             </div>
             <div class="condition-sms">
                 <img class="condition-icon" src="./imagenes/exclamation.png" alt="icono exclamacion">
@@ -22,22 +22,20 @@
             </div>
             <section class="button">
                 <button class="main-button">Encriptar</button>
-                <button class="secondary-button">Desencriptar</button>
+                <button>Desencriptar</button>
             </section>
-            <section>
-                <textarea class="decrypten-textarea" name="decrypten-sms" id="decrypten-sms" cols="30" rows="1">
-                </textarea>
+            <div class="decrypten-area">
                 <div class="warning-text">
-                    <h2>Ningún mensaje fue encontrado</h2>
-                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <h2 class="warning-title">Ningún mensaje fue encontrado</h2>
+                    <p class="warning-des">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
-            </section>
-            <div>
-                <button>Copiar</button>
             </div>
+            <!-- <div class="button">
+                <button>Copiar</button>
+            </div> -->
         </main>
         <footer>
-            <p>Desarrollado por Abel Andrés Ortiz H.</p>
+            <p>#Desarrollado por Abel Andrés Ortiz H.</p>
         </footer>
     </div>
 </body>
