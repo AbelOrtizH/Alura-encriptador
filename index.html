@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alura - Encriptador</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+        <img class="logo-mobile" src="./imagenes/Logo-mobile.svg" alt="logo alura">
+        </header>
+         <main>
+            <div class="encrypted-textarea">
+                <textarea name="encrypted-sms" id="encrypted-sms"  placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="condition-sms">
+                <img class="condition-exclamation" src="./imagenes/exclamation.png" alt="icono exclamacion">
+                <p class="condition-description">Solo letras minusculas y sin acentos</p>
+            </div>
+            <section class="button">
+                <button class="main-button">Encriptar</button>
+                <button class="secondary-button">Desencriptar</button>
+            </section>
+            <section>
+                <textarea class="decrypten-textarea" name="decrypten-sms" id="decrypten-sms" cols="30" rows="1">
+                </textarea>
+                <div class="warning-text">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </section>
+            <div>
+                <button>Copiar</button>
+            </div>
+        </main>
+        <footer>
+            <p>Desarrollado por Abel Andrés Ortiz H.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+/* font-Inter 400 - 700*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Colors y fuente*/
+:root {
+    --dark-blue-400: #0A3871;
+    --ligth-blue:#E5E5E5;
+    --gray: #495057;
+    --white: #FFFFFF;
+    --main-font: 'Inter', sans-serif;
+}
+
+/* Reset stylesheet  y bacground color*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--ligth-blue);
+}
+
+/* Formateando titulos y parrafos */
+h2, 
+p {
+    margin: 0;
+    font-family: var(--main-font);
+}
+
+/* Contenedor general */
+.wrapper {
+    padding: 1rem 1rem;
+    width: 375px; 
+   
+}
+
+.header {
+    width: 343px;
+    height: 96px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo-mobile {
+    width: 2rem;
+}
+
+.ncrypted-textarea 
