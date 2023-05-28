@@ -1,11 +1,9 @@
-/* font-Inter 400 - 700*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 /* Colors y fuente*/
 :root {
     --dark-blue-400: #0A3871;
     --ligth-blue:#E5E5E5;
-    --gray: #495057;
+    --gray: #D8DFE8;
     --white: #FFFFFF;
     --main-font: 'Inter', sans-serif;
 }
@@ -16,7 +14,7 @@
     padding: 0;
     box-sizing: border-box;
     background-color: var(--ligth-blue);
-   
+    max-width: 1440px;
 }
 
 /* Formateando titulos y parrafos */
@@ -26,120 +24,118 @@ p {
     font-family: var(--main-font);
 }
 
-/* Contenedor general */
-.wrapper {
-    padding: 1rem 1rem;
-    width: 375px;
-    height: auto;   
-}
-/* Header */
-.header {
-    width: 343px;
-    height: 96px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+.logo-alura {
+    width: 5%;
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
-.logo-mobile {
-    width: 2rem;
-}
-
-/* Area de ingreso de texto para ser encriptado */
-.encrypted-textarea > textarea {
-    width: 100%;
-    height: 3rem;
-    border:none;
-    margin: 3.3rem 0 9rem ;
-    font-size: 1.75rem;
-    line-height: 3rem;
-    cursor: text;
+main,
+footer {
     font-family: var(--main-font);
+    display: flex;
+    margin-left: 240px;
+}
+
+.contenedor-textarea {
+    width: 680px;
+}
+
+.textarea {
+    width: auto;
+    margin-top:80px;
+    border: none;
+    color: var(--dark-blue-400);
+    height: 635px;
+    text-transform: lowercase;
 }
 
 ::placeholder {
     color: var(--dark-blue-400);
+    font-size: 20px;
 }
 
-/* mensaje de condicion */
-.condition-sms {
+.textarea:focus {
+    outline: none;
+}
+
+.informacion {
     display: flex;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+    gap: 7px;
 }
 
-.condition-icon {
-    width: 1rem;
-    height: 1rem;
-}
-
-.condition-description {
-    font-size: 0.75rem;
-    align-items: center;
-    color: var(--gray);
-}
-
-.button {
+.botones {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 343px;
-    margin-bottom: 4rem;
-    
+    gap: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
-.button > button {
-    font-size: 1.12rem;
-    height: 4.18rem;
-    border-radius: 2rem;
-    border: var(--dark-blue-400) solid 1.5px;
-    cursor: pointer;
-}
-
-.main-button {
+.btn-encriptar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    font-size: 16px;
     background-color: var(--dark-blue-400);
     color: var(--white);
+    border: var(--dark-blue-400) 1px solid;
 }
 
-.decrypten-area {
+.btn-desencriptar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    font-size: 16px;
+    background-color: var(--gray);
+    color: var(--dark-blue-400);
+    border: var(--dark-blue-400) 1px solid;;
+}
+
+.contenedor-mensaje {
+    width: 400px;
+    margin: 0px 10px 0px 80px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: auto;
     background-color: var(--white);
-    border-radius: 2rem;
-    margin-bottom: 2rem;
+    border-radius: 32px;
+
 }
 
-.warning-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 32px;
-    height: auto;
+.mensaje {
+    width: 346px;
+    height: 740px;
+    /* margin-top: 32px; */
+    /* margin-bottom: 32px; */
+    border: none;
+    border-radius: 32px;
+    background:var(--white);
+    background-image: url(./imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: fixed;
 }
 
-.warning-des, 
-.warning-title {
+.mensaje:focus {
+    outline: none;
+}
+
+.contenedor-btn-copiar {
     background-color: var(--white);
-    text-align: center;
-    padding: 0.5rem;
-    color: #343A40;
 }
 
-.copy-button {
-    /* display: none; */
-    font-size: 1.12rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 100%;
-    border-radius: 2rem;
-    border: var(--white) solid 1.5px;
-    cursor: pointer;
-}
-
-footer p {
-    text-align: center;
+.btn-copiar {
+    display:none;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    font-size: 16px;
+    background-color: var(--white);
+    color: var(--dark-blue-400);
+    border: var(--dark-blue-400) 1px solid;
+    margin-top: 755px;
 }
