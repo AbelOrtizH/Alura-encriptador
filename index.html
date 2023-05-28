@@ -4,40 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Alura - Encriptador</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-        <img class="logo-mobile" src="./imagenes/Logo-mobile.svg" alt="logo alura">
-        </header>
-         <main>
-            <div class="encrypted-textarea">
-                <textarea name="encrypted-sms" id="encrypted-sms"  placeholder="Ingrese el texto aqui" autofocus></textarea>
+    <header>
+        <img class="lofo-alura" src="./imagenes/logo-alura.png" alt="Logo Alura">
+    </header>
+    <main>
+        <section>
+            <textarea class="textarea" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <img src="./imagenes/exclamation.png" alt="icono de exclamacion">
+                <h6>Solo letras minúsculas y sin acentos</h6>
             </div>
-            <div class="condition-sms">
-                <img class="condition-icon" src="./imagenes/exclamation.png" alt="icono exclamacion">
-                <p class="condition-description">Solo letras minusculas y sin acentos</p>
+            <div class="botones">
+                <button class="btn-encriptar">Encriptar</button>
+                <button class="btn-desencriptar">Desencriptar</button>
             </div>
-            <section class="button">
-                <button class="main-button">Encriptar</button>
-                <button>Desencriptar</button>
-            </section>
-                <div class="decrypten-area">
-                    <div class="warning-text">
-                        <h2 class="warning-title">Ningún mensaje fue encontrado</h2>
-                        <p class="warning-des">Ingresa el texto que desees encriptar o desencriptar.</p>
-                        <!-- <p id="ade">deededededededede</p> -->
-                    </div>
-                </div>
-                <!-- <div id="copy-button" class="button">
-                    <button>Copiar</button>
-                </div>             -->
-        </main>
-        <footer>
-            <p>#Desarrollado por Abel Andrés Ortiz H.</p>
-        </footer>
-    </div>
+        </section>
+        <section>
+            <textarea class="mensaje" cols="30" rows="10" ></textarea>
+            <button class="btn-copiar">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p>#Desarrollado por Abel Ortiz H.</p>
+    </footer>
 </body>
 </html>
