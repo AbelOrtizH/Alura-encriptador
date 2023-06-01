@@ -30,7 +30,7 @@ function encriptar(){
 
 };
 
-    
+console.log(encriptar());
 
 
 
