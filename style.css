@@ -1,5 +1,5 @@
 
-/* Colors y fuente*/
+Colors y fuente
 :root {
     --dark-blue-400: #0A3871;
     --ligth-blue:#E5E5E5;
@@ -13,46 +13,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--ligth-blue);
-    max-width: 1440px;
+    background-color: #E5E5E5;
+    max-width: 1200px;
 }
 
 /* Formateando titulos y parrafos */
 h2, 
 p {
     margin: 0;
-    font-family: var(--main-font);
+    font-family: 'Inter', sans-serif;
 }
-
 
 .logo-alura {
     width: 5%;
     margin-top: 40px;
     margin-left: 40px;
+    margin-bottom: 40px;
 }
 
 main,
 footer {
-    font-family: var(--main-font);
+    font-family: 'Inter', sans-serif;
     display: flex;
-    margin-left: 240px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 1rem;
 }
 
 .contenedor-textarea {
     width: 680px;
+    /* padding-top: rem; */
 }
 
 .textarea {
-    width: auto;
+    width: 700px;
     margin-top:80px;
     border: none;
-    color: var(--dark-blue-400);
-    height: 635px;
-    text-transform: lowercase;
+    color: #0A3871;
+    height: 15rem;
+    padding-left: 2rem;
+    font-size: 1.3rem;
 }
 
 ::placeholder {
-    color: var(--dark-blue-400);
+    color: #0A3871;
     font-size: 20px;
 }
 
@@ -69,8 +73,8 @@ footer {
     display: flex;
     gap: 24px;
     margin-top: 16px;
-    margin-bottom: 16px;
-}
+    margin-bottom: 1rem;
+} 
 
 .btn-encriptar {
     width: 328px;
@@ -78,11 +82,11 @@ footer {
     border-radius: 24px;
     padding: 24px;
     font-size: 16px;
-    background-color: var(--dark-blue-400);
-    color: var(--white);
-    border: var(--dark-blue-400) 1px solid;
+    background: #0A3871;
+    color: #FFFFFF;
+    border: #0A3871 1px solid;
     cursor: pointer;
-}
+} 
 
 
 .btn-desencriptar {
@@ -91,9 +95,9 @@ footer {
     border-radius: 24px;
     padding: 24px;
     font-size: 16px;
-    background-color: var(--gray);
-    color: var(--dark-blue-400);
-    border: var(--dark-blue-400) 1px solid;
+    background: white;
+    color: #0A3871 ;
+    border: #0A3871  1px solid;
     cursor: pointer;
 }
 
@@ -104,39 +108,41 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--white);
+    background-color: #E5E5E5;
     border-radius: 32px;
-
-}
+} 
 
 .contenedor-mensaje > h2{
     width: auto;
     padding: 20px;
-    margin-top: 550px;
+    /* margin-top: 550px; */
     background-color: var(--white);
     font-size: 32px;
     color: #343A40;
     text-align: center;
 }
+
 .contenedor-mensaje > p {
-    background-color: var(--white);
-    padding-left: 2px;
+    background: white;
+    padding: 10px;
     text-align: center;
     text-decoration: underline;
 }
 
 .mensaje {
-    width: 346px;
-    height: 550px;
-    /* margin-top: 32px; */
-    /* margin-bottom: 32px; */
+    width: 300px;
+    /* height: 550px;*/
+    margin-top: 80px;
+    margin-bottom: 32px;
+    /* padding: 1.3rem; */
     border: none;
-    border-radius: 32px;
-    background:var(--white);
-    background-image: url(./imagenes/Muñeco.png);
+    /* border-radius: 32px; */
+    /* background-color: #FFFFFF; */
+    /* background-image: url(./imagenes/Muñeco.png); */
     background-repeat: no-repeat;
     background-position: 50%;
     position: fixed;
+    font-size: 1.3rem;
 }
 
 .mensaje:focus {
@@ -144,19 +150,24 @@ footer {
 }
 
 .contenedor-btn-copiar {
-    background-color: var(--white);
+    background-color: var(--dark-blue-400);
+
 }
 
 .btn-copiar {
-    display:none;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 328px;
     height: 67px;
     border-radius: 24px;
     padding: 24px;
     font-size: 16px;
-    background-color: var(--white);
-    color: var(--dark-blue-400);
-    border: var(--dark-blue-400) 1px solid;
-    margin-top: 48px;
+    background: white;
+    color: #0A3871;
+    border: #0A3871 1px solid;
+    margin-top: 362px;
     cursor: pointer;
+    /* display: none; */
 }
